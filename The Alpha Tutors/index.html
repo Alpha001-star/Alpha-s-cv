@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Alpha Tutors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="bulb and book.png" alt="logo"width="20"> The Alpha Tutors</div>
+  
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  
+    <!-- Slide-in Nav -->
+    <nav id="navMenu" class="nav-menu">
+      <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+      <a href="#features" onclick="closeMenu()">Features</a>
+      <a href="#subjects" onclick="closeMenu()">Subjects</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- Overlay -->
+  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+  <section class="hero">
+    <img src="bulb and book.png" alt="logo" width="70">
+    <h1 id="headline">Welcome to The Alpha Tutors</h1>
+    <p>Your partner to academic sucess.</p>
+    <button onclick="alert('Redirecting to Login...')">Get Started</button>
+  </section>
+
+  <section id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="card">
+        <img src="images/2472253.png" alt="issy-ai" width="50">
+        <h3><a href="class selector/index.html" class="subject-btn">Class</a></h3>
+        <p>Select your class from jss1-sss3 and get textbook for each subject.</p>
+      </div>
+      <div class="card">
+        <img src="images/2472253.png" alt="jamb-img" width="50">
+        <h3><a href="wjp selector/index.html" class="subject-btn">WAEC, JAMB, PUTME (past questions)</a></h3>
+        <p>Challenge yourself with smart questions across subjects.</p>
+      </div>
+      <div class="card">
+        <img src="images/5922004.png" alt="nigeria-img" width="50">
+        <h3><a href="https://currentaffairs.ng/" class="subject-btn">Nigeria's current affairs</a></h3>
+        <p>Stay informed about Nigeria's politics, governance, and history.</p>
+      </div>
+      <div class="card">
+        <img src="images/10948431.png" alt="games-img" width="50">
+        <h3><a href="game selector/index.html" class="subject-btn">Games</a></h3>
+        <p>Test your ability by playing our Brain Teaser game</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="subjects">
+    <h2>Follow us on social media</h2>
+    <div class="features">
+      <div class="card">
+        <img src="images/4892735.png" alt="issy-ai" width="50">
+        <h3><a href=""  class="subject-btn">Chat with ISSY</a></h3>
+        <p>If you've got any information or questions not clear, get to chat with your personal ai ISSY.</p>
+      </div>
+      <div class="card">
+        <img src="images/4494495.png" alt="whatsapp-logo" width="50">
+        <h3><a href="https://chat.whatsapp.com/IfHBS4gEFMlKiXeqIUGZsK" class="subject-btn">Whatsapp</a></h3>
+        <p>join our Whatsapp community.</p>
+      </div>
+      <div class="card">
+        <img src="images/1216722.png" alt="telegram-logo" width="50">
+        <h3><a href="https://t.me/+4PRc5U_CXnhmNDBk" class="subject-btn">Telegram</a></h3>
+        <p>join our Telegram group.</p>
+      </div>
+      <div class="card">
+        <img src="images/2779760.png" alt="suggestion-box" width="50">
+        <h3><a href=contact-form-animated/index.html class="subject-btn">suggestion-box</a></h3>
+        <p>Want us to add new features?</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: support@edusmart.app</p>
+    <p>Phone: +234 805 569 5511</p>
+  </section>
+
+  <footer>
+    &copy; 2025 The Alpha Tutors. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
